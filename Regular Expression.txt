@@ -1,0 +1,26 @@
+Regular Expression are used in the NLP for pattern matching.
+\d is used int the regular expression for matching the pattern of digit and hence it can be used to detect the digit
+\d detects single digit \d used that many times will be used to detect the digit that many times
+
+To match the large number of digit we have to use the \d followed by the {number of digit} in the bracket hence it can detect that number of digit
+\d{12} will match to the number 12 numbers of digit
+
+if we have the symbol in the text data and we want yo match the data in the text then that data along with symbol can be matched with the combination of \symbol ann then name 
+To match with number +91-7558313179
+synatxt will be \+\d{2}\d{10}
+
+To check for the text matching pattern of the data on the basis of or condition we can use the | operator
+
+To check for the pattern which can be used in the text extraction of certain pattern we can directly use the pattern in the text matching.
+Consider the example of code in .py file
+
+To find out the data such that we want to exclude certain character in the text then we can use ^ symbol.
+To continue from the pattern and then exclude certain character we can use [^character]
+if we want to print from the given data to the next line then initial data value can be followed by [^\n]* so that it can have everything from that data to the next line of the data
+
+If we want our data to get the number follwed by certain character and that data is between the ceratin numbers then that data condition can be found out by the method of [list which we want in the data] or [The range of the function in the data]
+
+To make the regular expression to not consider the case of the letter we have to make it forget it case using the flag = re.IGNORECASE
+
+To extract the information before or after certain pattern we have to consider the data values to be in the ()
+Values in the () will be given on the output only
