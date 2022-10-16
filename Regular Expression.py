@@ -24,7 +24,7 @@ print(result)
 
 # To print any character except the character that we want to specify we give the ^ symbol
 
-pattern = '[^,]' #Here we have left the value of , from the text file
+pattern = '[^n]' #Here we have left the value of  from the text file
 print(re.findall(pattern, text))
 
 # Now we will be having only the header of each of the topic
@@ -45,10 +45,10 @@ print(re.findall(pattern, text))
 pattern = "([1-2][0-9]) BC"
 print("Years of the BC",re.findall(pattern, text, flags=re.IGNORECASE))
 
-# text ="""FY2021 Q1 $4.85
-# FY2020 Q4 $3"""
+text ="""FY2021 Q1 $4.85
+FY2020 Q4 $3.00"""
 
-# pattern1 = "[FY\d{4}]*"
-# pattern2 = '[$\d\.]*'
+pattern1 = "FY[\d{4}]*"
+pattern2 = '\$[\d\.\d\d]*'
 
-# print(re.findall(pattern1, text), " has the money of ", re.findall(pattern2,text))
+print(re.findall(pattern1, text), " has the money of ", re.findall(pattern2,text))

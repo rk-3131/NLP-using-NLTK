@@ -1,5 +1,5 @@
 Regular Expression are used in the NLP for pattern matching.
-\d is used int the regular expression for matching the pattern of digit and hence it can be used to detect the digit
+\d is used in the regular expression for matching the pattern of digit and hence it can be used to detect the digit
 \d detects single digit \d used that many times will be used to detect the digit that many times
 
 To match the large number of digit we have to use the \d followed by the {number of digit} in the bracket hence it can detect that number of digit
@@ -7,7 +7,7 @@ To match the large number of digit we have to use the \d followed by the {number
 
 if we have the symbol in the text data and we want yo match the data in the text then that data along with symbol can be matched with the combination of \symbol ann then name 
 To match with number +91-7558313179
-synatxt will be \+\d{2}\d{10}
+synatxt will be \+\d{2}-\d{10}
 
 To check for the text matching pattern of the data on the basis of or condition we can use the | operator
 
