@@ -52,3 +52,11 @@ pattern1 = "FY[\d{4}]*"
 pattern2 = '\$[\d\.\d\d]*'
 
 print(re.findall(pattern1, text), " has the money of ", re.findall(pattern2,text))
+
+text1 = "Hello, I am having an issue with my order #412889912."
+text2 = "My order 412889912 is having an issue, I was charged 50$ when online it says 40$"
+text3 = "I have a problem with my order number 412889912"
+pattern = "\#d{9}|\d{9}|\d{9}"
+print("For text number 1: ",re.findall(pattern,text1))
+print("For text number 2: ",re.findall(pattern,text2))
+print("For text number 3: ",re.findall(pattern,text3))

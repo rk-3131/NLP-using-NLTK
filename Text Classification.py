@@ -9,10 +9,10 @@ for words in movie_reviews.words():
 
 all_words = nltk.FreqDist(all_words)
 
-print(all_words.most_common(10))
+print("Most common words are ",all_words.most_common(10))
 # print(all_words.freq(21822))
 
-print(all_words["stupid"])
+print("Frequency of the word stupid is ",all_words["stupid"])
 
 # Another Example
 

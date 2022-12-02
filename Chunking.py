@@ -14,7 +14,7 @@ tags = nltk.pos_tag(tokenize)
 # print(tags)
 # To create the chunks we have to create the chunk rule it. It can be done by using the chunk rules. and they can be created by using the regular expression used in the python.
 
-myChunkRule = '''myChunk:{<NN?>*<VB?>*}'''
+myChunkRule = '''myChunk:{<NN>*<VB>*}'''
 
 parserObject = nltk.RegexpParser(myChunkRule)
 print(parserObject)
@@ -30,4 +30,4 @@ We can even use named entity set instead of chunking hence the named entity can 
 tokenize = nltk.tokenize.word_tokenize(sentence)
 tags = nltk.pos_tag(tokenize)
 NamedEntity = nltk.ne_chunk(tags)
-NamedEntity.draw()
+# NamedEntity.draw()
